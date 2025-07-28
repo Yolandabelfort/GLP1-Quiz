@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Insulin Sensitivity</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f4f7fa;
+      margin: 0;
+      padding: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      padding: 24px;
+      max-width: 640px;
+      margin: auto;
+    }
+    .card h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .level-tag {
+      font-size: 14px;
+      font-weight: 500;
+      background-color: #ffeef0;
+      color: #de3d5c;
+      padding: 4px 12px;
+      border-radius: 18px;
+      float: right;
+    }
+    .person-image {
+      width: 100%;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
+    .bar-container {
+      position: relative;
+      height: 36px;
+      margin: 20px 0;
+    }
+    .bar {
+      display: flex;
+      height: 12px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .bar div {
+      flex: 1;
+    }
+    .low { background-color: #aad4ff; }
+    .normal { background-color: #b6efb3; }
+    .medium { background-color: #ffe180; }
+    .high { background-color: #ff806c; }
+    .very-high { background-color: #f44336; }
+    .indicator {
+      position: absolute;
+      top: -36px;
+      left: 78%;
+      transform: translateX(-50%);
+      background: #2f3542;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .indicator:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -6px;
+      border-width: 6px;
+      border-style: solid;
+      border-color: #2f3542 transparent transparent transparent;
+    }
+    .circle {
+      position: absolute;
+      top: 6px;
+      left: 78%;
+      transform: translateX(-50%);
+      width: 24px;
+      height: 24px;
+      background: #fff;
+      border: 4px solid #e0e0e0;
+      border-radius: 50%;
+      z-index: 2;
+    }
+    .summary-box {
+      background: #ffeef0;
+      border-radius: 10px;
+      padding: 16px;
+      margin-top: 12px;
+      font-size: 14px;
+      color: #333;
+    }
+    .summary-box strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #de3d5c;
+    }
+    .section-title {
+      margin-top: 32px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .copy-section {
+      margin-top: 12px;
+      line-height: 1.6;
+      font-size: 15px;
+      color: #333;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .feature-item {
+      background: #fff;
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .feature-item img {
+      width: 32px;
+      height: 32px;
+      margin-right: 12px;
+    }
+    .feature-item div {
+      font-size: 14px;
+    }
+    .feature-item div span {
+      font-weight: bold;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Insulin Sensitivity <span class="level-tag">High</span></h2>
+    <img class="person-image" src="https://cdn.shopify.com/s/files/1/0728/4490/2557/files/obese-woman.jpg" alt="Obese Woman">
+    <div class="bar-container">
+      <div class="indicator">Your level</div>
+      <div class="circle"></div>
+      <div class="bar">
+        <div class="low"></div>
+        <div class="normal"></div>
+        <div class="medium"></div>
+        <div class="high"></div>
+        <div class="very-high"></div>
+      </div>
+    </div>
+    <div class="summary-box">
+      <strong>⚠️ HIGH level</strong>
+      High insulin response keeps your body locked in fat-storage mode, making it nearly impossible to lose weight — even when you’re doing everything right.
+    </div>
+
+    <div class="section-title">Your Weight Struggles Aren't Your Fault</div>
+    <div class="copy-section">
+      Based on your quiz results, here's what's really going on in your body.<br><br>
+      You’ve been doing everything right. But your body still refuses to let go of the fat.<br><br>
+      That’s not your fault. That’s biology, and it’s different for women.<br><br>
+      After 30, your hormones start shifting. Even one small insulin spike from a normal meal can trigger a hormonal feedback loop that locks your body into fat-storage mode.<br><br>
+      We call it the Fat-Lock Loop, and it’s the #1 reason women struggle to lose weight no matter how hard they try.<br><br>
+      Here’s how it works: When insulin rises, it signals your body to store fat. That triggers more hormonal imbalance, especially in estrogen and GLP-1, which makes your body even more sensitive to fat-storing signals.<br><br>
+      So the more you try to lose weight… the more your body holds on to it.
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-item"><img src="https://cdn-icons-png.flaticon.com/512/685/685655.png"><div>Fat Impact<br><span>Noticeable</span></div></div>
+      <div class="feature-item"><img src="https://cdn-icons-png.flaticon.com/512/3136/3136108.png"><div>Room For Change<br><span>High</span></div></div>
+      <div class="feature-item"><img src="https://cdn-icons-png.flaticon.com/512/747/747376.png"><div>Hormonal Imbalance<br><span>Severe</span></div></div>
+      <div class="feature-item"><img src="https://cdn-icons-png.flaticon.com/512/2809/2809452.png"><div>Weight Resistance<br><span>Above Average</span></div></div>
+    </div>
+  
+<style>
+  .glpzempic-section {
+    margin-top: 36px;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+  }
+  .glpzempic-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  .glpzempic-benefits {
+    margin-top: 16px;
+  }
+  .benefit {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .pulse-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    animation: pulse 1.2s infinite;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.4); opacity: 0.6; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+</style>
+
+<div class="glpzempic-section">
+  <h3>That’s Where GLPzempic™ Flips the Switch.</h3>
+  <p>This breakthrough formula was designed specifically to help women break the Fat-Lock Loop by supporting the GLP-1 pathway — the same natural system targeted by expensive weight loss injections.</p>
+
+  <div class="glpzempic-benefits">
+    <div class="benefit"><div class="pulse-dot"></div>Lower insulin response after meals</div>
+    <div class="benefit"><div class="pulse-dot"></div>Block fat-storage signals at the source</div>
+    <div class="benefit"><div class="pulse-dot"></div>Reignite your metabolism’s natural rhythm, even without changing your diet</div>
+  </div>
+
+  <p style="margin-top:16px;">GLPzempic could help you lose up to [XX pounds in the next 90 days] — not by starving yourself, but by restoring the hormonal balance your body was meant to have.</p>
+  <p>This isn’t hype. It’s science, built for the female metabolism. Thousands of women have already seen the scale move again, even after everything else failed.</p>
+</div>
+</div>
+</body>
+</html>
