@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GLPFormula Quiz - Step 2</title>
+  <title>Glpzempic Quiz - Step 3</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -124,40 +124,130 @@
       color: #888;
     }
   </style>
+    <style>
+      .container {
+        max-width: 480px;
+        margin: 0 auto;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px;
+        font-size: 16px;
+      }
+      .logo {
+        font-family: Georgia, serif;
+        font-style: italic;
+        font-size: 20px;
+      }
+      .image-box {
+        margin: 10px;
+        border-radius: 16px;
+        overflow: hidden;
+      }
+      .image-box img {
+        width: 100%;
+        border-radius: 16px;
+      }
+      .caption {
+        background-color: white;
+        text-align: center;
+        padding: 12px;
+        margin: 10px 16px 0;
+        border-radius: 12px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .caption span {
+        display: block;
+        color: #5e9b00;
+        font-size: 13px;
+        margin-top: 4px;
+        font-weight: 500;
+      }
+      .headline {
+        text-align: center;
+        font-weight: bold;
+        font-size: 22px;
+        padding: 20px 16px 8px;
+      }
+      .subheadline {
+        text-align: center;
+        font-size: 15px;
+        padding: 0 16px 12px;
+        color: #333;
+      }
+      .btn {
+        display: block;
+        width: calc(100% - 32px);
+        margin: 16px auto;
+        padding: 14px;
+        text-align: center;
+        font-weight: bold;
+        background-color: #c8f76c;
+        color: #000;
+        border: none;
+        border-radius: 24px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .quote-box {
+        background: #fff;
+        margin: 12px 16px;
+        padding: 16px;
+        border-radius: 14px;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .quote-box img {
+        width: 60px;
+        height: auto;
+      }
+      .quote-text {
+        font-style: italic;
+        color: #111;
+      }
+      .quote-author {
+        font-weight: bold;
+        margin-top: 8px;
+      }
+    </style>
 </head>
 <body>
 
-  <div class="quiz-step">Step 2 of 8</div>
+  <div class="quiz-step">Step 4 of 8</div>
   <div class="logo">Glpzempic</div>
 
   <div class="content">
-    <h1>Great! Now, please tell us your gender.</h1>
-
-    <button class="button">♂️ Male <span class="arrow">→</span></button>
-    <button class="button">♀️ Female <span class="arrow">→</span></button>
-
-    <div class="security">
-      🔒 Your information is safe with us <br>
-      <img src="https://i.imgur.com/Abk8vOD.png" alt="Secure with Norton and McAfee" />
-    </div>
-
-    <div class="review">
-      <div>
-        <img src="https://cdn-icons-png.flaticon.com/512/194/194938.png" alt="Emma" />
-        <span class="name">Emma C.</span> 🇺🇸 Tampa
+    <div class="container">
+      <div class="image-box">
+        <img src="./julia.jpeg" alt="Julia Before and After">
       </div>
-      <div class="stars-yellow">★★★★★</div>
-      <p>I no longer feel bloated or tired. Glpzempic has truly transformed my metabolism!</p>
-      <div class="verified">✓ Verified review</div>
-    </div>
-
-    <div class="icons">
-      <div class="icon">🌱 Vegan</div>
-      <div class="icon">🌾 Gluten-free</div>
-      <div class="icon">🧬 Non-GMO</div>
-      <div class="icon">🔥 Metabolism</div>
-      <div class="icon">⚡ Energy</div>
-      <div class="icon">⚖️ Weight loss</div>
+      <div class="caption">
+        Julia
+        <span>Lost 33 lbs in 2 months</span>
+      </div>
+      <div class="headline">
+        Over 5,000 success stories<br>and new ones every day!
+      </div>
+      <div class="subheadline">
+        Safe, effective and used by thousands – discover why Glpzempic is America’s #1 fat burner of 2025.
+      </div>
+      <button class="btn">CONTINUE</button>
+  
+      <div class="quote-box">
+        <div>
+          <div class="quote-text">
+            “Your plan is tailored to your goals and lifestyle. If any adjustments are needed, we’ll refine it to make sure you get the best results possible.”
+          </div>
+          <div class="quote-author">Glpzempic Research Team</div>
+        </div>
+        <img src="https://cdn-icons-png.flaticon.com/512/387/387561.png" alt="Doctor">
+      </div>
     </div>
   </div>
 
@@ -171,5 +261,11 @@
     This site is not a part of the Facebook website or Facebook Inc. Additionally, this site is NOT endorsed 
     by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
   </footer>
+  <script src="./jquery.min.js"></script>
+  <script>
+    $('.btn').on('click', function(){
+      window.location.href = "./step-4.html"
+    })
+  </script>
 </body>
 </html>
